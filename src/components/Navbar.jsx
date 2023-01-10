@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='logo-img'></div>
           <ul>
             <li>
-             {window.location.href == adminPanel ? 
+             {window.location.href !== adminPanel ? 
              <Link to="/" className="link-text nav-link-text">
                 Login
               </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
               }
             </li>
             <li>
-              { window.location.href == adminPanel ? 
+              { window.location.href !== adminPanel ? 
               <Link to="/register" className="link-text nav-link-text">
                 Register
               </Link>
